@@ -33,7 +33,7 @@ const LandingPage: React.FC = () => {
     <div style={ContainerStyle} className="w-full min-h-screen flex flex-col">
       <Nav />
       <section className=" w-[85%] flex flex-col lg:flex-row h-fit mx-auto flex-1">
-        <div className=" w-full lg:w-[40%] h-[70vh] lg:h-[110vh] flex items-start justify-center flex-col">
+        <div className=" w-full lg:w-[40%] h-[60vh] lg:h-[110vh] flex items-start justify-center flex-col">
           <div className="flex mb-5 gap-3 items-center">
             <img src="/cup.svg" className=" object-cover h-[30px] md:h-[50px]" alt="" />
             <span className=" w-[30px] md:w-[50px] border border-black h-[30px] md:h-[50px] rounded-full center">
@@ -82,7 +82,7 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-[60%]   relative h-[100vh] lg:h-[110vh] flex items-end justify-center flex-col">
+        <div className="w-full lg:w-[60%]   relative h-[60vh] mt-3 lg:h-[110vh] flex items-end justify-center flex-col">
           <div
             style={BoxStyle}
             className="hidden lg:flex absolute flex-col center top-[10rem] left-[27%]  w-[150px] h-[150px] rounded-[20px] "
@@ -103,7 +103,7 @@ const LandingPage: React.FC = () => {
             <div className="w-[350px] relative h-[350px] ">
               <motion.img initial={{ opacity:0 ,scale:.3,rotateZ:'3deg'}} animate={{opacity:1, scale:1,rotateZ:'0deg'}} transition={{duration:.6, delay:.7,  ease: [0.17, 0.67, 0.83, 0.67]}}
                 className=" w-full  h-full object-cover"
-                src="/img.svg"
+                src="/img.png"
                 alt=""
               />
               <div className=" md:w-[80px] h-[50px] w-[50px] md:h-[80px] rounded-full bg-secondary-500 text-white center absolute -top-3 md:-top-10 -left-6">
