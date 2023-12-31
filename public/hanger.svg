@@ -1,0 +1,15 @@
+<svg width="392" height="340" viewBox="0 0 392 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M201.739 338.889C198.652 332.173 195.967 329.04 189.892 324.311L188.503 324.329C181.315 329.429 179.378 332.834 177.019 339.193L201.739 338.889Z" fill="black" stroke="black"/>
+<rect y="339.174" width="2.4" height="392" rx="1.2" transform="rotate(-90 0 339.174)" fill="black"/>
+<rect width="2.39732" height="147.486" rx="1.19866" transform="matrix(0.999924 -0.012304 -0.012304 -0.999924 187.431 338.505)" fill="black"/>
+<rect width="2.39732" height="100" rx="1.19866" transform="matrix(0 -1 -1 0 154 171.905)" fill="black"/>
+<path d="M152.734 170.752C164.434 169.894 187.664 173.467 186.982 194.624" stroke="black" stroke-width="2.3"/>
+<rect width="2.39732" height="147.486" rx="1.19866" transform="matrix(0.999924 -0.012304 -0.012304 -0.999924 18.4306 147.505)" fill="url(#paint0_linear_94_67)"/>
+<path d="M53.9897 170.379C42.2893 171.237 19.0591 167.664 19.7415 146.507" stroke="black" stroke-width="2.3"/>
+<defs>
+<linearGradient id="paint0_linear_94_67" x1="1.19866" y1="0" x2="1.19866" y2="147.486" gradientUnits="userSpaceOnUse">
+<stop offset="0.453125"/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
