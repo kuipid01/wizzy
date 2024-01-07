@@ -1,8 +1,12 @@
 import ReactDOM from "react-dom/client";
+import 'simplebar';
+import 'simplebar/dist/simplebar.css';
 
 import "./index.css";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.tsx";
+import Signup from "./pages/Signup.tsx";
+import Dashboard from "./pages/Dashboard.tsx";
 const Layout = () => {
   return (
     <div>
@@ -19,6 +23,14 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: '/register',
+        element: <Signup />,
+      },
+      {
+        path: '/dashboard/:id',
+        element: <Dashboard />,
       },
     ],
   },

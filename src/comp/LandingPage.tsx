@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { CiPlay1 } from "react-icons/ci";
 import { IoAnalytics } from "react-icons/io5";
 import {motion} from 'framer-motion'
+import { SiGoogleanalytics } from "react-icons/si";
 const LandingPage: React.FC = () => {
   const ContainerStyle: React.CSSProperties = {
     background:
@@ -51,7 +52,7 @@ const LandingPage: React.FC = () => {
           <motion.div initial={{ opacity:0 ,rotateZ:'3deg'}} animate={{opacity:1,rotateZ:'0deg'}} transition={{duration:.5, delay:.6}} className="flex w-full gap-3">
             <Link
               className="text-sm mt-5 md:text-base flex-1 h-[50px] bg-secondary-500 rounded-[20px] text-white center"
-              to=""
+              to="/register"
             >
               Sign Up
             </Link>
@@ -125,7 +126,7 @@ const LandingPage: React.FC = () => {
             <motion.div variants={textOpacity} initial='initial' animate='animate' transition={{ delay:9}} className=" flex flex-col h-[100px] justify-between border-t py-2 border-black-100/60 w-[250px]  gap-3">
               <div className=" flex items-center gap-3">
                 <div className=" center w-[40px] rounded-full border-black h-[40px] bg-transparent border ">
-                  <IoAnalytics />
+                <SiGoogleanalytics />
                 </div>
                 <p>Price</p>
               </div>

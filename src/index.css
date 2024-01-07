@@ -2,6 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Enable scrollbar variants */
+.simplebar-scrollbar::before {
+  background-color: #7f5539;
+}
+
+.simplebar-scrollbar:hover::before {
+  background-color: #7f5539;
+}
+
+.simplebar-track {
+  background-color: #f1f1f1;
+}
 *,
 *::after,
 *::before {
