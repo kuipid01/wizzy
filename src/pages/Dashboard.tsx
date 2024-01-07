@@ -17,11 +17,19 @@ import { FaPlus } from "react-icons/fa6";
 import "react-modern-calendar-datepicker/lib/DatePicker.css";
 import { Calendar, DayValue } from "react-modern-calendar-datepicker";
 import { useState } from "react";
+import useWindowWidth from "../comp/useWindowWidth";
+import Mobile from "./Mobile";
 const Dashboard = () => {
+  const windowWidth = useWindowWidth();
+  console.log(windowWidth);
   const [selectedDay, setSelectedDay] = useState<DayValue | null>(null);
   return (
-    <div className="bg-primary-500/60 overflow-hidden overflow-y-scrolls relative text-white  w-full  h-fit flex  ">
-      <div className="hidden sticky top-0 h-screen md:flex py-10 shadow-2xl bg-white text-black rounded-r-[15px] flex-col justify-between px-4 left sm:w-[30%] md:w-[20%]">
+    <div className="bg-primary-500/60 overflow-hidden overflow-y-scrolls relative text-white  w-full min-h-screen  h-fit flex lg:justify-end  ">
+      <IoIosMenu className=" lg:flex hidden absolute cursor-pointer mb-3 top-2 left-2 text-lg" />
+
+      <Mobile />
+
+      <div className="hidden fixed z-30 top-0 h-screen lg:flex py-10 shadow-2xl bg-white text-black rounded-r-[15px] flex-col justify-between px-4 left-0 sm:w-[30%] md:w-[20%]">
         <ul className=" flex flex-col gap-5">
           <li
             className={`  cursor-pointer hover:text-secondary-500 transition-all   text-[20px]   flex items-center gap-3`}
@@ -73,9 +81,8 @@ const Dashboard = () => {
           </ul>
         </div>
       </div>
-      <IoIosMenu className="absolute cursor-pointer mb-3 top-2 left-2 text-lg" />
       <div
-        className={`mt-6 h-fit flex-1 px-5 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6`}
+        className={`hidden lg:grid  mt-6 h-fit w-full md:w-[80%] px-5 py-10  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6`}
       >
         <div className="bg-white h-[250px]  rounded-[20px]  border-white">
           <Alltransactions />
