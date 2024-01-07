@@ -12,7 +12,6 @@ import { FcMoneyTransfer } from "react-icons/fc";
 import { IoIosMenu } from "react-icons/io";
 import Alltransactions from "../comp/Alltransactions";
 import BarChart from "../comp/Bar";
-import { FaPlus } from "react-icons/fa6";
 import { FiActivity } from "react-icons/fi";
 const Dashboard = () => {
   return (
