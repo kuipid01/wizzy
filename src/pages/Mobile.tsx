@@ -1,5 +1,8 @@
 import { IoIosMenu } from "react-icons/io";
-
+import { FaHome, FaLaptopHouse, FaRegBell } from "react-icons/fa";
+import { BiSolidReport } from "react-icons/bi";
+import { BsCashStack } from "react-icons/bs";
+import { CiBank } from "react-icons/ci";
 const Mobile = () => {
   let day = true;
   let month = false;
@@ -19,11 +22,10 @@ const Mobile = () => {
         <h1 className="font-bold text-lg">$40000.000099</h1>
       </div>
 
-      <div
-        data-simplebar
-        className=" relative text-black p-10 scrollbar-thumb-gray-400 overflow-hidden overflow-y-scroll h-[70vh] rounded-t-[45px] w-full bg-white"
-      >
-        <div className="flex bg-red-600 z-30 sticky w-full   top-[5%]  rounded-[100px]">
+      <div className=" relative text-black px-10 scrollbar-thumb-gray-400 overflow-hidden overflow-y-scroll h-[70vh] rounded-t-[45px] w-full bg-white">
+        <div className=" w-full sticky z-30 top-0 h-[10vh] bg-white"></div>
+
+        <div className="flex bg-gray-200 z-30 sticky w-full   top-[5%]  rounded-[100px]">
           <div
             className={`flex-1 cursor-pointer flex justify-center items-center h-[60px] rounded-[100px] ${
               day ? "bg-black text-white" : "bg-transparent text-black"
@@ -62,6 +64,14 @@ const Mobile = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="fixed flex text-normal justify-evenly items-center rounded-t-[45px] bottom-0 w-full p-5 h-[10vh] bg-secondary-500">
+        <FaHome className="cursor-pointer" />{" "}
+        <FaRegBell className="cursor-pointer" />
+        <BiSolidReport className="cursor-pointer" />
+        <BsCashStack className="cursor-pointer" />
+        <CiBank className="cursor-pointer" />
+        <FaLaptopHouse className="  cursor-pointer" />
       </div>
     </div>
   );
