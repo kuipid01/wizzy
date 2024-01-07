@@ -44,13 +44,19 @@ const Alltransactions = () => {
     },
   ];
   return (
-    <div data-simplebar className="w-full scrollbar-thumb-gray-400 overflow-hidden overflow-y-scroll text-black flex flex-col gap-5 h-full   px-3">
-      <div className=" mt-2 rounded-t-[20px]  shadow-sm py-3 flex sticky top-0 bg-white  items-center justify-between" >
+    <div
+      data-simplebar
+      className="w-full scrollbar-thumb-gray-400 overflow-hidden overflow-y-scroll text-black flex flex-col gap-5 h-full   px-3"
+    >
+      <div className=" mt-2 rounded-t-[20px]  shadow-sm py-3 flex sticky top-0 bg-white  items-center justify-between">
         <h1 className=" font-bold text-[20px]">All Transactions</h1>
-        <FaPlus className='font-extralight text-gray-500 text-normal' />
+        <FaPlus className="font-extralight text-gray-500 text-normal" />
       </div>
       {transactions.map((item: transactionType, i) => (
-        <div key={i} className="flex py-2  bg-gray-50 items-center justify-between ">
+        <div
+          key={i}
+          className="flex py-2  bg-gray-50 items-center justify-between "
+        >
           <div className="flex gap-3 items-center">
             <img
               src="/register.png"

@@ -21,9 +21,9 @@ const Mobile = () => {
 
       <div
         data-simplebar
-        className=" text-black p-5 scrollbar-thumb-gray-400 overflow-hidden overflow-y-scroll flex-1 rounded-t-[45px] w-full bg-white"
+        className=" relative text-black p-10 scrollbar-thumb-gray-400 overflow-hidden overflow-y-scroll h-[70vh] rounded-t-[45px] w-full bg-white"
       >
-        <div className="flex bg-gray-200 rounded-[100px]">
+        <div className="flex bg-red-600 z-30 sticky w-full   top-[5%]  rounded-[100px]">
           <div
             className={`flex-1 cursor-pointer flex justify-center items-center h-[60px] rounded-[100px] ${
               day ? "bg-black text-white" : "bg-transparent text-black"
@@ -39,8 +39,8 @@ const Mobile = () => {
             <h1 className=" font-bold">Month</h1>
           </div>
         </div>
-        <div className=" mt-5">
-          <div className="flex text-normal justify-between items-center">
+        <div className=" relative mt-5">
+          <div className="flex  text-normal justify-between items-center">
             <p className=" font-bold">18 May 2024</p>
             <p className=" font-extrabold text-secondary-100">$4000</p>
           </div>
